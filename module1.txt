@@ -1,1 +1,2 @@
  module1 file
+module1 comment for merge conflict
