@@ -1,2 +1,6 @@
  module1 file
+<<<<<<< HEAD
  testing merge conflict
+=======
+module1 comment for merge conflict
+>>>>>>> module1

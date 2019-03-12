@@ -3,7 +3,8 @@ ipackage practiceprograms;
 import java.util.Scanner;
 
 //1. Array is a data structure which stores a fixed-size sequential collection of elements of the same type.
-//adding comment
+
+//module1 coment
 
 public class Arraytest {
 	
