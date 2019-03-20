@@ -1,0 +1,9 @@
+package practiceprograms;
+
+public class UserExceptiontestMain {
+
+	public static void main(String[] args) {
+		UserExceptiontest ue = new UserExceptiontest();
+	}
+
+}

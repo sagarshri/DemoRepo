@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Edureka Edit Image" duration-ms="68261" started-at="2018-10-10T10:57:58Z" finished-at="2018-10-10T10:59:06Z">
+    <groups>
+    </groups>
+    <test name="Edureka Test" duration-ms="68261" started-at="2018-10-10T10:57:58Z" finished-at="2018-10-10T10:59:06Z">
+      <class name="com.edureka.tests.EdurekaTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.edureka.tests.EdurekaTest@6a4f787b]" name="setup" is-config="true" duration-ms="21799" started-at="2018-10-10T10:57:58Z" finished-at="2018-10-10T10:58:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:100, instance:com.edureka.tests.EdurekaTest@6a4f787b]" name="verifyUserLogin" duration-ms="15595" started-at="2018-10-10T10:58:22Z" data-provider="getData" finished-at="2018-10-10T10:58:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sagarshrivastava1989@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S@786tava]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.edureka.tests.EdurekaTest@6a4f787b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-10T10:58:38Z" finished-at="2018-10-10T10:58:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLogin status=SUCCESS method=EdurekaTest.verifyUserLogin(java.lang.String, java.lang.String)[pri:100, instance:com.edureka.tests.EdurekaTest@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="editProfile()[pri:200, instance:com.edureka.tests.EdurekaTest@6a4f787b]" name="editProfile" duration-ms="26241" started-at="2018-10-10T10:58:38Z" finished-at="2018-10-10T10:59:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.edureka.tests.EdurekaTest@6a4f787b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-10T10:59:04Z" finished-at="2018-10-10T10:59:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editProfile status=SUCCESS method=EdurekaTest.editProfile()[pri:200, instance:com.edureka.tests.EdurekaTest@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.edureka.tests.EdurekaTest@6a4f787b]" name="cleanUp" is-config="true" duration-ms="1925" started-at="2018-10-10T10:59:04Z" finished-at="2018-10-10T10:59:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.edureka.tests.EdurekaTest -->
+    </test> <!-- Edureka Test -->
+  </suite> <!-- Edureka Edit Image -->
+</testng-results>

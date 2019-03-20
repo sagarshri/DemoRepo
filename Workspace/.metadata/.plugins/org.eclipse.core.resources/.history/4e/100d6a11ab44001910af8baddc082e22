@@ -1,0 +1,12 @@
+package factorypackage;
+
+import org.testng.annotations.Test;
+
+//  @DataProvider feature can also be used with the @Factory annotation for creating tests at runtime.
+// This can be done by declaring the @Factory annotation on a constructor of a class or on a regular method.
+
+public class SimpleTestFactory_3 {
+  @Test
+  public void f() {
+  }
+}

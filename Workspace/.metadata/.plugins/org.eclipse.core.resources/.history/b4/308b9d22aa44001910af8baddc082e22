@@ -1,0 +1,14 @@
+package factorypackage;
+
+import org.testng.annotations.Factory;
+import org.testng.annotations.Test;
+
+//  main advantage of using the factory methods is that you can pass parameters to test classes while initializing them.
+
+
+public class SimpleTestFactory_2 {
+    	 @Factory
+	    public Object[] factoryMethod() {
+	        return new Object[] { new SimpleTest(0), new SimpleTest(1) };
+	    }
+}

@@ -1,0 +1,29 @@
+package casestudy8;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DemoGmailProjectPOMStyle {
+
+	public static void main(String[] args) {
+		try {
+			ChromeDriver driver;
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		driver.get("https://www.gmail.com");
+		GmailProjectUserEntryPOMStyle gmailPOM = new GmailProjectUserEntryPOMStyle(driver);
+		
+		}
+		
+		catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

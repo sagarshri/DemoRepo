@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LoginAndValidateCourse">
+  <test thread-count="5" name="LoginAndValidateCourse">
+    <classes>
+      <class name="com.edureka.tests.LoginAndValidateCourse"/>
+    </classes>
+  </test> <!-- LoginAndValidateCourse -->
+</suite> <!-- LoginAndValidateCourse -->

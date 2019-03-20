@@ -1,0 +1,7 @@
+import org.openqa.selenium.By;
+
+public class HeadlessBrowserByHtmlUnit {
+   public static void main(String[] args) {
+	   WebDriver driver = new HtmlUnitDriver();
+}
+}

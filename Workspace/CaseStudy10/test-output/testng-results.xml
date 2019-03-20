@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="87635" started-at="2018-10-09T09:06:36Z" finished-at="2018-10-09T09:08:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="87635" started-at="2018-10-09T09:06:36Z" finished-at="2018-10-09T09:08:04Z">
+      <class name="com.edureka.tests.EdurekaCourseSearchTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="setup" is-config="true" duration-ms="14355" started-at="2018-10-09T09:06:36Z" finished-at="2018-10-09T09:06:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:100, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="verifyUserLogin" duration-ms="20269" started-at="2018-10-09T09:06:52Z" data-provider="getData" finished-at="2018-10-09T09:07:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sagarshrivastava1989@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S@786tava]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-09T09:07:12Z" finished-at="2018-10-09T09:07:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLogin status=SUCCESS method=EdurekaCourseSearchTest.verifyUserLogin(java.lang.String, java.lang.String)[pri:100, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="searchCouseInEdureka()[pri:200, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="searchCouseInEdureka" duration-ms="10770" started-at="2018-10-09T09:07:12Z" finished-at="2018-10-09T09:07:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCouseInEdureka -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-09T09:07:23Z" finished-at="2018-10-09T09:07:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchCouseInEdureka status=SUCCESS method=EdurekaCourseSearchTest.searchCouseInEdureka()[pri:200, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="selectCourseAddToAndPayment()[pri:300, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="selectCourseAddToAndPayment" duration-ms="39688" started-at="2018-10-09T09:07:23Z" finished-at="2018-10-09T09:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCourseAddToAndPayment -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-09T09:08:02Z" finished-at="2018-10-09T09:08:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectCourseAddToAndPayment status=SUCCESS method=EdurekaCourseSearchTest.selectCourseAddToAndPayment()[pri:300, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.edureka.tests.EdurekaCourseSearchTest@6a4f787b]" name="cleanUp" is-config="true" duration-ms="1568" started-at="2018-10-09T09:08:02Z" finished-at="2018-10-09T09:08:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.edureka.tests.EdurekaCourseSearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Module Execution]">
+  <test thread-count="5" name="LoginAndValidateCourse(failed)">
+    <classes>
+      <class name="com.edureka.tests.LoginAndValidateCourse">
+        <methods>
+          <include name="verifyEnrolledCourses"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="cleanUp"/>
+          <include name="verifyTitleOfHomepage"/>
+          <include name="verifyUserLogin"/>
+          <include name="userLogout"/>
+        </methods>
+      </class> <!-- com.edureka.tests.LoginAndValidateCourse -->
+    </classes>
+  </test> <!-- LoginAndValidateCourse(failed) -->
+  <test thread-count="5" name="ExploreBlogs(failed)">
+    <classes>
+      <class name="com.edureka.tests.ExploreBlogs">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="cleanUp"/>
+          <include name="verifyTitleOfHomepage"/>
+          <include name="exploreBlogs"/>
+          <include name="userLogout"/>
+          <include name="verifyUserLogin"/>
+        </methods>
+      </class> <!-- com.edureka.tests.ExploreBlogs -->
+    </classes>
+  </test> <!-- ExploreBlogs(failed) -->
+  <test thread-count="5" name="EditProfile(failed)">
+    <classes>
+      <class name="com.edureka.tests.EditProfile">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="cleanUp"/>
+          <include name="editUserProfile"/>
+          <include name="verifyUserLogin"/>
+          <include name="userLogout"/>
+          <include name="verifyTitleOfHomepage"/>
+        </methods>
+      </class> <!-- com.edureka.tests.EditProfile -->
+    </classes>
+  </test> <!-- EditProfile(failed) -->
+  <test thread-count="5" name="SearchandAddCourse(failed)">
+    <classes>
+      <class name="com.edureka.tests.SearchandAddCourse">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="cleanUp"/>
+          <include name="verifyUserLogin"/>
+          <include name="searchAndAddCourse"/>
+          <include name="verifyTitleOfHomepage"/>
+          <include name="userLogout"/>
+        </methods>
+      </class> <!-- com.edureka.tests.SearchandAddCourse -->
+    </classes>
+  </test> <!-- SearchandAddCourse(failed) -->
+</suite> <!-- Failed suite [All Module Execution] -->

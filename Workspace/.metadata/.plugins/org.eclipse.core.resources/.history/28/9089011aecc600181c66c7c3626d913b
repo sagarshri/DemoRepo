@@ -1,0 +1,51 @@
+package casestudy8;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class GmailProjectUserLoginPOMStyle {
+	private WebElement loginUsername;
+	private WebElement submitUsername;
+
+	private WebElement loginPassword;
+
+	private WebElement submitPassword;
+	private WebElement composeMail;
+	private WebElement mailTo;
+	private WebElement mailSubject;
+	private WebElement mailBody;
+	private WebElement mailSentbutton;
+	
+	public GmailProjectUserLoginPOMStyle(WebDriver driver) {
+		loginUsername = driver.findElement(By.xpath("//input[@id='identifierId']"));
+		submitUsername = driver.findElement(By.xpath("//div[@id='identifierNext']"));
+		loginPassword = driver.findElement(By.xpath("//input[@name='password']"));
+		submitPassword = driver.findElement(By.xpath("//div[@id='passwordNext']/content/span[contains(text(),'Next')]"));
+		composeMail = driver.findElement(By.xpath("//div[contains(text(),'Compose')]"));
+		mailTo = driver.findElement(By.xpath("//div[@id=':or']/table/tbody/tr/td[2]/form/div[1]/table/tbody/tr[1]/td[1]/div/span[contains(text(),'To')]/../../../td[2]/div/div//textarea[@id=':q4']"));
+		mailSubject = driver.findElement(By.xpath("//div[@id=':or']/table/tbody/tr/td[2]/form/div[3]/input"));
+		mailBody = driver.findElement(By.xpath("//div[@id=':or']/table/tbody/tr/td[2]/table/tbody/tr[1]/td/div/div[1]/div[2]/div[1]/div/table/tbody/tr/td[2]/div[2]/div[@id=':qr']"));
+		mailSentbutton = driver.findElement(By.xpath("//div[@id=':pc']"));
+}
+	
+	public void loginToGmail() throws InterruptedException{
+		loginUsername.sendKeys("sagarshrivastava1989@gmail.com");
+		submitUsername.click();
+		loginPassword.sendKeys("Welc0me26@26");
+		Thread.sleep(3000);
+		submitPassword.click();
+		}
+	
+	public void composeMail(){
+		composeMail.click();
+		mailTo.sendKeys("sagarshrivastava1989@gmail.com");
+		mailSubject.sendKeys("Dummy Mail");
+		mailBody.sendKeys("Sending testing mail");
+		mailSentbutton.click();
+		
+	}
+	
+	
+	
+}	

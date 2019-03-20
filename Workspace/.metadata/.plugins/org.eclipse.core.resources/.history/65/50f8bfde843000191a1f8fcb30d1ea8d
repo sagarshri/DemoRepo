@@ -1,0 +1,61 @@
+package practiceprograms;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.omg.CORBA.portable.OutputStream;
+
+//1. InPutStream : The InputStream is used to read data from a source.
+//2. OutPutStream : The OutputStream is used for writing data to a destination.
+//Ex : Byte Stream -- FileInputStream and FileOutputStream
+//     Character Stream -- FileReader and FileWriter  
+
+public class Filetest {
+	
+	public static void main(String[] args) throws IOException{
+
+		// --------- Input -----------
+		// FileInputStream in = new FileInputStream("E:\\Workspace\\input.txt");
+		      //  OR
+	     File f = new File("E:\\Workspace\\input.txt");
+	     InputStream in = new FileInputStream(f);
+	          //  OR
+	    //InputStream in = new FileInputStream("E:\\Workspace\\input.txt");
+		
+	    // ---------- Output --------- 
+	     FileOutputStream out = new FileOutputStream("E:\\Workspace\\output.txt");
+	          // OR     
+	    //FileReader in = new FileReader("E:\\Workspace\\input.txt");
+	    //FileWriter out = new FileWriter("E:\\Workspace\\output.txt");
+		
+		int c;
+		while ((c = in.read())!=-1) {
+			System.out.println(c);
+			try {
+				out.write(c);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		//To create new directory
+		String dirName = "E:\\Workspace\\newDir";
+		File f2 = new File(dirName);
+		f2.mkdir();
+		
+		//To list all files and folders
+		File f3 = new File("E:\\Workspace");
+		String [] directories;
+		directories = f3.list();
+		for (String string : directories) {
+			System.out.println(string + "\n");
+		}
+	}
+
+}

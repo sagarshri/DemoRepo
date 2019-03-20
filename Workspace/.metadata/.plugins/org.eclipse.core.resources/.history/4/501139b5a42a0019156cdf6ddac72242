@@ -1,0 +1,7 @@
+package practiceprograms;
+
+public class UserExceptiontest {
+	
+	private double balance;
+
+}

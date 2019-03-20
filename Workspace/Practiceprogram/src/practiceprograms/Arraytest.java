@@ -1,0 +1,47 @@
+package practiceprograms;
+
+import java.util.Scanner;
+
+//1. Array is a data structure which stores a fixed-size sequential collection of elements of the same type.
+
+public class Arraytest {
+	
+	public static void showArray(int [] arr2) {
+    	for (int i=0; i< arr2.length ; i++) {
+			System.out.printf("arr2[%d] is : %d \n", i, arr2[i]);
+		}
+    }
+	
+	public static int[] reverseArray(int[] arr3){
+		int x = arr3.length;
+		int [] reverse = new int [x];
+		for(int i=0, j=x-1; i < x; i++, j--){
+			reverse[i]=arr3[j];
+		}
+		
+		return reverse;
+	}
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+		int [] arr1 = new int [5];
+        System.out.println("Enter elements into the array");
+        for (int i=0; i< arr1.length ; i++) {
+			System.out.printf("Enter Element for arr1[%d]", i );
+			arr1[i]=sc.nextInt();
+		}
+        for (int i=0; i< arr1.length ; i++) {
+			System.out.printf("arr1[%d] is : %d \n", i, arr1[i]);
+		}
+        for (int i : arr1) {
+        	System.out.println(i);
+		}
+        
+        Arraytest.showArray(arr1);
+        int [] reverseArray = Arraytest.reverseArray(arr1);
+        for (int i : reverseArray) {
+			System.out.println(i);
+		}
+	}
+
+}

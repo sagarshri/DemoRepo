@@ -1,0 +1,15 @@
+package collections;
+
+// This class extends HashSet, but adds no members of its own.
+// LinkedHashSet maintains a linked list of the entries in the set, in the order in which they were inserted. 
+// This allows insertion-order iteration over the set.
+
+
+public class LinkedHashSetExample_4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

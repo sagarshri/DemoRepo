@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Module Execution">
+  <test name="LoginAndValidateCourse">
+    <classes>
+    <class name="com.edureka.tests.LoginAndValidateCourse"/>
+    </classes>
+  </test> 
+  <test name="ExploreBlogs">
+    <classes>
+    <class name="com.edureka.tests.ExploreBlogs"/>
+    </classes>
+  </test> 
+  <test name="EditProfile">
+    <classes>
+    <class name="com.edureka.tests.EditProfile"/>
+    </classes>
+  </test> 
+  <test name="SearchandAddCourse">
+    <classes>
+      <class name="com.edureka.tests.SearchandAddCourse"/>
+    </classes>
+  </test> 
+</suite> 

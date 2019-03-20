@@ -1,0 +1,44 @@
+package casestudy8;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DemoGmailProjectPOMStyle {
+	
+	public void loginToGmail(GmailProjectUserEntryPOMStyle gmailUE,GmailProjectPasswordEntryPOMStyle gmailPE,GmailprojectHomePagePOMStyle gmailHP){
+		try {
+			gmailUE.enterUsername();
+		
+		gmailPE.enterPassword();
+		gmailHP.composeMail();
+	}
+	} catch (InterruptedException e) {
+		
+		e.printStackTrace();
+	}
+
+	public static void main(String[] args) {
+		
+			ChromeDriver driver;
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		driver.get("https://www.gmail.com");
+		GmailProjectUserEntryPOMStyle gmailUE = new GmailProjectUserEntryPOMStyle(driver);
+		GmailProjectPasswordEntryPOMStyle gmailPE = new GmailProjectPasswordEntryPOMStyle(driver);
+		GmailprojectHomePagePOMStyle gmailHP = new GmailprojectHomePagePOMStyle(driver);
+		DemoGmailProjectPOMStyle DG = new DemoGmailProjectPOMStyle();
+		DG.loginToGmail(gmailUE,gmailPE,gmailHP);
+		
+		
+		
+		
+		
+		
+	}
+
+}

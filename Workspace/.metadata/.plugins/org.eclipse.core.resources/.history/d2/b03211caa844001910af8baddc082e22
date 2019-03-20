@@ -1,0 +1,21 @@
+package factorypackage;
+
+import org.testng.annotations.Factory;
+import org.testng.annotations.Test;
+
+class SimpleTest1
+{
+    @Test
+    public void simpleTest() {
+        System.out.println("Simple Test Method.");
+    }
+}
+
+public class SimpleTestFactory {
+	
+	    @Factory
+	    public Object[] factoryMethod() {
+	        return new Object[] { new SimpleTest1(), new SimpleTest1() };
+	    }
+	}
+

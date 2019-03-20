@@ -1,0 +1,20 @@
+package practiceprograms;
+
+public class UserExceptiontest {
+	
+	private double balance;
+	private int accNumber;
+	public double getBalance() {
+		return balance;
+	}
+	public void withdraw(double amount) {
+		if (amount<balance) {
+			balance -= amount;
+		}
+	}
+	public int getAccNumber() {
+		return accNumber;
+	}
+	
+
+}

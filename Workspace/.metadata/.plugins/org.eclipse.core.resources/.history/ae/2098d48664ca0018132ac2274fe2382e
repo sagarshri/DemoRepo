@@ -1,0 +1,11 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		/Modular
+		/Modular/reports
+		/Modular/resources
+		/Modular/screenshots
+	}
+}
+

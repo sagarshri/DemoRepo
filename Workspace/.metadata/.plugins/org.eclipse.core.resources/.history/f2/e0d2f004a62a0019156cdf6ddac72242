@@ -1,0 +1,20 @@
+package practiceprograms;
+
+public class UserExceptiontestMain {
+
+	public static void main(String[] args) {
+		UserExceptiontest ue = new UserExceptiontest();
+		ue.CheckingAccount(12345);
+		ue.deposit(5000);
+		System.out.println("Account no is : " + ue.getAccNumber());
+		System.out.println("Account balance is : "+ ue.getBalance());
+		try {
+			ue.withdraw(3000);
+			System.out.println("Transaction is completed.....Remaining balance is :" + ue.getBalance());
+		} catch (UserExceptionCreate e) {
+			System.out.println("You have a shortage of :" + e.getAmount());
+			e.printStackTrace();
+		}
+	}
+
+}

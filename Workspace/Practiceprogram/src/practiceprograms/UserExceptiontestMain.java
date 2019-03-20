@@ -1,0 +1,15 @@
+package practiceprograms;
+
+public class UserExceptiontestMain {
+
+	public static void main(String[] args) {
+		UserExceptiontest ue = new UserExceptiontest();
+		ue.CheckingAccount(12345);
+		ue.deposit(5000);
+		System.out.println("Account no is : " + ue.getAccNumber());
+		System.out.println("Account balance is : "+ ue.getBalance());
+		ue.withdraw(6000);
+			
+	}
+
+}

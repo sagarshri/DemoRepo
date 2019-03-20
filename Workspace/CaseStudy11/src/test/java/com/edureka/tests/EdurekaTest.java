@@ -1,0 +1,47 @@
+package com.edureka.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
+
+import utility.DataProviderFromExcel;
+
+public class EdurekaTest extends BaseSetup {
+	
+	
+	@Test(priority = 100,dataProvider="getData", dataProviderClass=DataProviderFromExcel.class)
+	public void verifyUserLogin(String userMailID, String userPassword) throws Exception {
+		
+		test = extent.createTest("Verify Login to the Edureka Portal");
+		
+		String expectedUserName = "Sagar";
+		edurekaPages.userLogin(userMailID, userPassword);
+        String actualUsername = edurekaPages.getUserName();
+		
+        
+        
+        test.log(Status.INFO, "Expected UserName is : "+ expectedUserName);
+		test.log(Status.INFO, "Actual UserName is : "+ actualUsername);
+
+		Assert.assertEquals(expectedUserName, actualUsername);
+	}
+	
+	@Test(priority = 200)
+	public void editProfile() throws Exception{
+		test = extent.createTest("Edit Profile and edit photo upload button");
+		
+		String expectedTitle = "My Profile | Edureka";
+		
+		edurekaPages.uploadImageProfile();
+		String actualTitle = driver.getTitle();
+		
+		test.log(Status.INFO, "Expected UserName is : "+ expectedTitle);
+		test.log(Status.INFO, "Actual UserName is : "+ actualTitle);
+		
+		Assert.assertEquals(expectedTitle, actualTitle);
+	}
+	
+	
+
+}

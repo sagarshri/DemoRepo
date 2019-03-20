@@ -1,0 +1,31 @@
+package factorypackage;
+
+import org.testng.annotations.Test;
+
+    class DependencyTest{
+    	
+	@Test(dependsOnMethods = {"simpleTest3"})
+    public void simpleTest2() {
+        System.out.println("Simple Test Method.");
+    }
+	
+	@Test
+    public void simpleTest3() {
+        System.out.println("Simple Test Method.");
+    }
+	
+	@Test
+    public void simpleTest4() {
+        System.out.println("Simple Test Method.");
+    }
+}
+
+
+public class SimpleTestFactory_4
+{
+    @Factory
+    public Object[] factoryMethod()
+    {
+        return new Object[] { new DependencyTest(1), new DependencyTest(2) };
+    }
+}

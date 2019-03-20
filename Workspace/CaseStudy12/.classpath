@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="E:/selenium-server-standalone-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/animal-sniffer-annotations-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/byte-buddy-1.7.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/error_prone_annotations-2.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/guava-23.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/j2objc-annotations-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/phantomjsdriver-1.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/selenium-api-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sshrivat.ORADEV/Downloads/Setup/jar_files/selenium-remote-driver-3.8.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
